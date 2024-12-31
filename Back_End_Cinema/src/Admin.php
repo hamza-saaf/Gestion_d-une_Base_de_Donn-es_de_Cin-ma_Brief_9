@@ -1,9 +1,6 @@
 <?php  
-class Admin{
-    private $num ;
-    private $nom;
-    private $email;
-    private $password;
+class Admin extends Client{
+    
     public function __construct($num ,$nom,$email,$password)
     {
         $this->num=$num;
@@ -11,11 +8,14 @@ class Admin{
         $this->email=$email;
         $this->password=$password;
     }
-    public function getNum(){
-        return $this->num;
+    public function ajouterFilm(){
+        return
     }
-    public function setNom($newName){
-        $this->num = $newName;
+    public function modifierFilm(){
+
+    }
+    public function supprimerFilm(){
+        
     }
 }
 
