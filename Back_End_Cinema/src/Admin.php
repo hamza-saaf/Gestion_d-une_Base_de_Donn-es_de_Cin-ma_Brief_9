@@ -1,12 +1,11 @@
 <?php  
-class Admin extends Client{
+class Admin extends User{
     
     public function __construct($num ,$nom,$email,$password)
     {
-        $this->num=$num;
-        $this->nom=$nom;
-        $this->email=$email;
-        $this->password=$password;
+       parent:: __construct($num ,$nom,$email,$password){
+
+       }
     }
     public function ajouterFilm(){
         return
